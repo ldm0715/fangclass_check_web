@@ -2,7 +2,7 @@
 
 
 <div align="center">
-<img src="https://github.com/ldm0715/fangclass_check_web/blob/main/static/icon/fanclass_256x256.png" width="10%">
+<img src="https://github.com/ldm0715/fangclass_check_web/blob/main/static/icon/logo.png" width="10%">
 </div>
 
 <div align="center">
