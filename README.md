@@ -31,8 +31,8 @@
 
 ```bash
 # 1. 克隆仓库
-git clone https://github.com/<your-username>/fangclass_Question_History_web.git
-cd fangclass_Question_History_web
+git clone https://github.com/ldm0715/fangclass_check_web.git
+cd fangclass_check_web
 
 # 2. 安装依赖（需要 uv）
 uv sync --all-groups
