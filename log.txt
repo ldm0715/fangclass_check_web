@@ -1,0 +1,44 @@
+❌ 文件 cookies.json 不存在
+没有找到已保存的cookie，开始登录流程
+正在打开登录页面: https://class.fangban.net/login
+等待二维码加载...
+✓ 二维码已加载
+二维码URL: https://class.fangban.net/api/login/qrcode/?scene=1d0725bd3d094091bee23c31ad3dfbaf
+正在下载二维码...
+显示二维码时出错: cannot access local variable 'Image' where it is not associated with a value
+请直接访问这个URL获取二维码: https://class.fangban.net/api/login/qrcode/?scene=1d0725bd3d094091bee23c31ad3dfbaf
+
+==================================================
+请使用微信/APP扫描上方二维码登录
+等待扫码中... (超时时间: 120秒)
+==================================================
+
+已等待 10 秒...
+✓ 检测到页面跳转，登录成功！
+
+正在获取登录后的cookie...
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkI...
+
+验证cookie有效性...
+验证响应: {'code': 1401, 'msg': '请先登录'}
+✓ Cookie验证成功！
+✓ Cookie已保存到 cookies.json
+浏览器已关闭
+
+==================================================
+登录成功！可以使用cookie进行后续API调用
+==================================================
+✓ 使用cookie请求成功
+获取到课程数据: {'code': 1401, 'msg': '请先登录'}
+ DESKTOP-1K1P1BS    D:\Python\code\fangclass_Question_History  ➜ (  master)   35.245s   4:30 PM   
+ ⚡宫城楠木 ❯❯python -u "d:\Python\code\fangclass_Question_History\test.py" 
+✓ 从 cookies.json 加载cookie成功
+发现已保存的cookie，正在验证...
+验证响应: {'code': 1401, 'msg': '请先登录'}
+使用已保存的cookie...
+
+==================================================
+登录成功！可以使用cookie进行后续API调用
+==================================================
+✓ 使用cookie请求成功
+获取到课程数据: {'code': 1401, 'msg': '请先登录'}
