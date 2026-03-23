@@ -50,9 +50,9 @@ jobs:
           # 获取上一个 tag，如果没有则取所有 commit
           PREV_TAG=$(git describe --tags --abbrev=0 HEAD^ 2>/dev/null || echo "")
           if [ -z "$PREV_TAG" ]; then
-            COMMITS=$(git log --pretty=format:"- %s (%h)" HEAD)
+            COMMITS=$(git log --pretty=format:"- %s (%h)%n%w(0,2,2)%b" HEAD)
           else
-            COMMITS=$(git log --pretty=format:"- %s (%h)" "${PREV_TAG}..HEAD")
+            COMMITS=$(git log --pretty=format:"- %s (%h)%n%w(0,2,2)%b" "${PREV_TAG}..HEAD")
           fi
           # 写入多行输出
           {
