@@ -1,0 +1,50 @@
+name: Build and Release
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
+
+      - name: Set up Python
+        run: uv python install
+
+      - name: Install dependencies
+        run: uv sync --all-groups
+
+      - name: Build
+        run: uv run build.py
+
+      - name: Get version and date
+        id: version
+        shell: bash
+        run: |
+          VERSION=$(grep '^version' pyproject.toml | sed 's/version = "\(.*\)"/\1/')
+          DATE=$(date +%Y%m%d)
+          SHORT_SHA=${GITHUB_SHA::7}
+          TAG="v${VERSION}-${DATE}.${SHORT_SHA}"
+          echo "version=$VERSION" >> "$GITHUB_OUTPUT"
+          echo "tag=$TAG" >> "$GITHUB_OUTPUT"
+
+      - name: Package artifact
+        shell: pwsh
+        run: Compress-Archive -Path "dist/方课提问记录查询/*" -DestinationPath "方课提问记录查询-${{ steps.version.outputs.tag }}.zip"
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.tag }}
+          name: ${{ steps.version.outputs.tag }}
+          files: 方课提问记录查询-${{ steps.version.outputs.tag }}.zip
+          generate_release_notes: true

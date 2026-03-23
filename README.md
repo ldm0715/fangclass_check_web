@@ -1,6 +1,17 @@
 # 研讨厅提问记录查询
 
-![index](static\md\index.png)
+
+<div align="center">
+<img alt="Static Badge" src="https://img.shields.io/badge/python-3.13-blue?logo=python">
+<img alt="license" src="https://img.shields.io/github/license/ldm0715/fangclass_check_web">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/ldm0715/fangclass_check_web">
+</div>
+
+<div align="center">
+<img alt="index" src="https://raw.githubusercontent.com/ldm0715/fangclass_check_web/refs/heads/main/static/md/index.png" width="80%">
+
+</div>
+
 
 查询研讨厅每节课的提问记录，帮助用户快速了解自己的提问次数、有效率等数据，方便及时与课程记录进行校对。
 
@@ -10,7 +21,7 @@
 
 ### 直接使用
 
-前往本仓库的 [Releases](../../releases) 页面，下载最新版本的压缩包，解压后运行 `方课提问记录查询.exe` 即可。
+前往本仓库的 [Releases](https://github.com/ldm0715/fangclass_check_web/releases) 页面，下载最新版本的压缩包，解压后运行 `方课提问记录查询.exe` 即可。
 
 ### 从源码构建
 

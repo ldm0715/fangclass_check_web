@@ -11,3 +11,5 @@ wheels/
 /log
 /draw_console.py
 /static/info
+/log.txt
+/config.json
