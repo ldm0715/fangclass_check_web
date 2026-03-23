@@ -3,6 +3,12 @@ name: Build and Release
 on:
   push:
     branches: [main]
+    paths-ignore:
+      - '*.md'
+      - 'LICENSE'
+      - 'docs/**'
+      - '.gitignore'
+      - 'static/**'
 
 permissions:
   contents: write

@@ -2,6 +2,10 @@
 
 
 <div align="center">
+<img src="https://github.com/ldm0715/fangclass_check_web/blob/main/static/icon/fanclass_256x256.png" width="10%">
+</div>
+
+<div align="center">
 <img alt="Static Badge" src="https://img.shields.io/badge/python-3.13-blue?logo=python">
 <img alt="license" src="https://img.shields.io/github/license/ldm0715/fangclass_check_web">
 <img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/ldm0715/fangclass_check_web">
