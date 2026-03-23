@@ -3,6 +3,11 @@
 import subprocess
 import sys
 
+# 确保在非 UTF-8 环境（如 GitHub Actions）中也能正常输出中文
+if hasattr(sys.stdout, "reconfigure"):
+    sys.stdout.reconfigure(encoding="utf-8")
+    sys.stderr.reconfigure(encoding="utf-8")
+
 
 def main():
     cmd = [
