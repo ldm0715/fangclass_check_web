@@ -30,8 +30,8 @@ def main():
         print()
         print("=" * 50)
         print("  打包成功！")
-        print("  输出目录: dist/方课提问记录查询/")
-        print("  运行: dist/方课提问记录查询/方课提问记录查询.exe")
+        print("  输出目录: dist/fangclass_check_web/")
+        print("  运行: dist/fangclass_check_web/fangclass_check_web.exe")
         print()
         print("=" * 50)
     else:

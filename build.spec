@@ -41,7 +41,7 @@ exe = EXE(
     a.scripts,
     [],
     exclude_binaries=True,
-    name='方课提问记录查询',
+    name='fangclass_check_web',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -58,5 +58,5 @@ coll = COLLECT(
     strip=False,
     upx=True,
     upx_exclude=[],
-    name='方课提问记录查询',
+    name='fangclass_check_web',
 )
